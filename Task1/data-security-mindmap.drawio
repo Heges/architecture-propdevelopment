@@ -1,0 +1,313 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="data-security-mindmap" name="Безопасность данных">
+    <mxGraphModel dx="2372" dy="1348" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="center" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontColor=#000000;fontStyle=0;fontSize=18;" value="Безопасность данных" vertex="1">
+          <mxGeometry height="100" width="230" x="1080" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="public" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontStyle=0;fontSize=15;" value="Публичные данные" vertex="1">
+          <mxGeometry height="60" width="210" x="660" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="public-data" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Данные:&lt;br&gt;карточки ЖК и объектов, цены, публичные новости, описание услуг" vertex="1">
+          <mxGeometry height="80" width="230" x="390" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="p-leak" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Утечка: незначительный" vertex="1">
+          <mxGeometry height="50" width="180" x="170" as="geometry" />
+        </mxCell>
+        <mxCell id="p-leak-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Информация уже предназначена для внешних пользователей." vertex="1">
+          <mxGeometry height="50" width="140" x="10" as="geometry" />
+        </mxCell>
+        <mxCell id="p-loss" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Потеря: значительный" vertex="1">
+          <mxGeometry height="50" width="180" x="170" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="p-loss-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Витрина перестаёт поддерживать подбор и бронирование." vertex="1">
+          <mxGeometry height="50" width="140" x="10" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="p-distort" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Искажение: значительный" vertex="1">
+          <mxGeometry height="50" width="180" x="170" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p-distort-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Ошибочные цены или статусы ведут к неверным решениям клиента." vertex="1">
+          <mxGeometry height="50" width="140" x="10" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p-quality" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Некачественные данные: значительный" vertex="1">
+          <mxGeometry height="50" width="180" x="170" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="p-quality-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Неполные карточки ухудшают подбор и снижают доверие." vertex="1">
+          <mxGeometry height="50" width="140" x="10" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="p-devalue" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Обесценивание: значительный" vertex="1">
+          <mxGeometry height="50" width="180" x="170" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="p-devalue-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Устаревшие цены и наличие объектов быстро теряют пользу." vertex="1">
+          <mxGeometry height="50" width="140" x="10" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="internal" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontStyle=0;fontSize=15;" value="Внутренние данные" vertex="1">
+          <mxGeometry height="60" width="210" x="660" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="internal-data" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Данные:&lt;br&gt;архитектурные схемы, регламенты команд, внутренние отчёты, обезличенная аналитика, логи без ПДн" vertex="1">
+          <mxGeometry height="90" width="230" x="390" y="995" as="geometry" />
+        </mxCell>
+        <mxCell id="i-leak" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Утечка: значительный" vertex="1">
+          <mxGeometry height="50" width="180" x="170" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="i-leak-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Схемы и процессы помогают искать слабые места." vertex="1">
+          <mxGeometry height="50" width="140" x="10" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="i-loss" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Потеря: значительный" vertex="1">
+          <mxGeometry height="50" width="180" x="170" y="995" as="geometry" />
+        </mxCell>
+        <mxCell id="i-loss-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Без них сложнее сопровождать системы и проходить аудит." vertex="1">
+          <mxGeometry height="50" width="140" x="10" y="995" as="geometry" />
+        </mxCell>
+        <mxCell id="mmqsEpS5DsIItVNH99gN-5" edge="1" parent="1" source="internal-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="i-quality" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i-distort" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Искажение: значительный" vertex="1">
+          <mxGeometry height="50" width="180" x="170" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="i-distort-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Ошибочные отчёты и схемы ведут к неверным решениям." vertex="1">
+          <mxGeometry height="50" width="140" x="10" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="i-quality" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Некачественные данные: значительный" vertex="1">
+          <mxGeometry height="50" width="180" x="170" y="1125" as="geometry" />
+        </mxCell>
+        <mxCell id="i-quality-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Плохая аналитика мешает BI, ML и AI-направлению." vertex="1">
+          <mxGeometry height="50" width="140" x="10" y="1125" as="geometry" />
+        </mxCell>
+        <mxCell id="i-devalue" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Обесценивание: значительный" vertex="1">
+          <mxGeometry height="50" width="180" x="170" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="i-devalue-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Старые отчёты и регламенты перестают отражать реальность." vertex="1">
+          <mxGeometry height="50" width="140" x="10" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="confidential" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontStyle=0;fontSize=15;" value="Конфиденциальные данные" vertex="1">
+          <mxGeometry height="60" width="230" x="1520" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="confidential-data" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Данные:&lt;br&gt;ФИО, телефон, email клиентов и собственников, анкеты, бронирования, онлайн-сделки, ЖКУ, платежи, данные партнёрских API" vertex="1">
+          <mxGeometry height="110" width="250" x="1800" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="c-leak" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Утечка: критический" vertex="1">
+          <mxGeometry height="50" width="180" x="2090" as="geometry" />
+        </mxCell>
+        <mxCell id="c-leak-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="ПДн влекут штрафы, жалобы клиентов и репутационный ущерб." vertex="1">
+          <mxGeometry height="50" width="150" x="2290" as="geometry" />
+        </mxCell>
+        <mxCell id="c-loss" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Потеря: критический" vertex="1">
+          <mxGeometry height="50" width="180" x="2090" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="c-loss-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Срываются сделки, платежи ЖКУ и восстановление истории клиента." vertex="1">
+          <mxGeometry height="50" width="150" x="2290" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="c-distort" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Искажение: критический" vertex="1">
+          <mxGeometry height="50" width="180" x="2090" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c-distort-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Чужие ФИО в кабинете или неверная сделка напрямую вредят клиенту." vertex="1">
+          <mxGeometry height="50" width="150" x="2290" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="c-quality" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Некачественные данные: значительный" vertex="1">
+          <mxGeometry height="50" width="180" x="2090" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="c-quality-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Ошибки в контактах и правах собственности ломают сервисные процессы." vertex="1">
+          <mxGeometry height="50" width="150" x="2290" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="c-devalue" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Обесценивание: значительный" vertex="1">
+          <mxGeometry height="50" width="180" x="2090" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="c-devalue-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Устаревшие контакты и статусы снижают пользу данных для сервиса и BI." vertex="1">
+          <mxGeometry height="50" width="150" x="2290" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="secret" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontStyle=0;fontSize=15;" value="Секретные данные" vertex="1">
+          <mxGeometry height="60" width="230" x="1520" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="secret-data" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Данные:&lt;br&gt;пароли, ключи, токены, сертификаты, Kubernetes Secrets, доступы к БД, ключи интеграций с партнёрами и госорганами" vertex="1">
+          <mxGeometry height="100" width="250" x="1800" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="s-leak" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Утечка: критический" vertex="1">
+          <mxGeometry height="50" width="180" x="2090" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="s-leak-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Ключи дают прямой доступ к БД, API и инфраструктуре." vertex="1">
+          <mxGeometry height="50" width="150" x="2290" y="930" as="geometry" />
+        </mxCell>
+        <mxCell id="s-loss" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Потеря: критический" vertex="1">
+          <mxGeometry height="50" width="180" x="2090" y="995" as="geometry" />
+        </mxCell>
+        <mxCell id="s-loss-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Сервисы не смогут авторизоваться и восстановить доступы." vertex="1">
+          <mxGeometry height="50" width="150" x="2290" y="995" as="geometry" />
+        </mxCell>
+        <mxCell id="s-distort" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Искажение: критический" vertex="1">
+          <mxGeometry height="50" width="180" x="2090" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="s-distort-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Подмена секрета нарушает доверие между системами." vertex="1">
+          <mxGeometry height="50" width="150" x="2290" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="s-quality" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Некачественные данные: значительный" vertex="1">
+          <mxGeometry height="50" width="180" x="2090" y="1125" as="geometry" />
+        </mxCell>
+        <mxCell id="s-quality-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Неучтённые и не ротируемые секреты ослабляют контроль доступа." vertex="1">
+          <mxGeometry height="50" width="150" x="2290" y="1125" as="geometry" />
+        </mxCell>
+        <mxCell id="s-devalue" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" value="Обесценивание: значительный" vertex="1">
+          <mxGeometry height="50" width="180" x="2090" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="s-devalue-exp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" value="Истёкшие ключи ломают интеграции, если ротация не управляется." vertex="1">
+          <mxGeometry height="50" width="150" x="2290" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="e-center-public" edge="1" parent="1" source="center" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="public">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-public-data" edge="1" parent="1" source="public" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="public-data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-data-leak" edge="1" parent="1" source="public-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="p-leak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-leak-exp" edge="1" parent="1" source="p-leak" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="p-leak-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-data-loss" edge="1" parent="1" source="public-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="p-loss">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-loss-exp" edge="1" parent="1" source="p-loss" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="p-loss-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-data-distort" edge="1" parent="1" source="public-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="p-distort">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="110" />
+              <mxPoint x="370" y="155" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-p-distort-exp" edge="1" parent="1" source="p-distort" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="p-distort-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-data-quality" edge="1" parent="1" source="public-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="p-quality">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-quality-exp" edge="1" parent="1" source="p-quality" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="p-quality-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-data-devalue" edge="1" parent="1" source="public-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="p-devalue">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-p-devalue-exp" edge="1" parent="1" source="p-devalue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="p-devalue-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-center-internal" edge="1" parent="1" source="center" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="internal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-internal-data" edge="1" parent="1" source="internal" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="internal-data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-i-data-leak" edge="1" parent="1" source="internal-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="i-leak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-i-leak-exp" edge="1" parent="1" source="i-leak" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="i-leak-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-i-data-loss" edge="1" parent="1" source="internal-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="i-loss">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-i-loss-exp" edge="1" parent="1" source="i-loss" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="i-loss-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-i-data-distort" edge="1" parent="1" source="internal-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="i-distort">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-i-distort-exp" edge="1" parent="1" source="i-distort" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="i-distort-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-i-quality-exp" edge="1" parent="1" source="i-quality" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="i-quality-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-i-data-devalue" edge="1" parent="1" source="internal-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="i-devalue">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="1040" />
+              <mxPoint x="370" y="1215" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-i-devalue-exp" edge="1" parent="1" source="i-devalue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="i-devalue-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-center-confidential" edge="1" parent="1" source="center" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="confidential">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-confidential-data" edge="1" parent="1" source="confidential" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="confidential-data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-data-leak" edge="1" parent="1" source="confidential-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="c-leak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-leak-exp" edge="1" parent="1" source="c-leak" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="c-leak-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-data-loss" edge="1" parent="1" source="confidential-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="c-loss">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-loss-exp" edge="1" parent="1" source="c-loss" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="c-loss-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-data-distort" edge="1" parent="1" source="confidential-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="c-distort">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-distort-exp" edge="1" parent="1" source="c-distort" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="c-distort-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-data-quality" edge="1" parent="1" source="confidential-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="c-quality">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-quality-exp" edge="1" parent="1" source="c-quality" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="c-quality-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-c-data-devalue" edge="1" parent="1" source="confidential-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="c-devalue">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2180" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e-c-devalue-exp" edge="1" parent="1" source="c-devalue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="c-devalue-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-center-secret" edge="1" parent="1" source="center" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="secret">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-secret-data" edge="1" parent="1" source="secret" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="secret-data">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-s-data-leak" edge="1" parent="1" source="secret-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="s-leak">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-s-leak-exp" edge="1" parent="1" source="s-leak" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="s-leak-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-s-data-loss" edge="1" parent="1" source="secret-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="s-loss">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-s-loss-exp" edge="1" parent="1" source="s-loss" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="s-loss-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-s-data-distort" edge="1" parent="1" source="secret-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="s-distort">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-s-distort-exp" edge="1" parent="1" source="s-distort" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="s-distort-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-s-data-quality" edge="1" parent="1" source="secret-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="s-quality">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-s-quality-exp" edge="1" parent="1" source="s-quality" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="s-quality-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-s-data-devalue" edge="1" parent="1" source="secret-data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="s-devalue">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e-s-devalue-exp" edge="1" parent="1" source="s-devalue" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;strokeColor=#000000;" target="s-devalue-exp">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
